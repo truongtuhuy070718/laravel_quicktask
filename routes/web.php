@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'TaskController@getIndex');
+Route::post('/', 'TaskController@addTask');
+
