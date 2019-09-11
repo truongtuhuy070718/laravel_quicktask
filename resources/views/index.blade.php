@@ -4,8 +4,8 @@
     <div class="row">
         <form action="{{ asset('/') }}" class="form-control" method="post" >
             @csrf
-            <input type="text" class="col-sm-8 mr-3 ml-3 taskname" placeholder="Enter new Task" name="taskname">
-            <button type="submit" class="btn btn-primary col-sm-3" id="addtask">Add Task</button>
+            <input type="text" class="col-sm-8 mr-3 ml-3 taskname" placeholder="@lang('messages.entertask')" name="taskname">
+            <button type="submit" class="btn btn-primary col-sm-3" id="addtask">@lang('messages.addtask')</button>
         </form>
     </div>
     <hr>
