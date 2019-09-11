@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\Task;
 class TaskController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         $tasks = Task::all();
         return view('index')->with('tasks', $tasks);
     }
