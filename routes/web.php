@@ -11,6 +11,4 @@
 |
 */
 
-Route::get('/', 'TaskController@getIndex');
-Route::post('/', 'TaskController@addTask');
-
+Route::get('/', 'TaskController@index');
