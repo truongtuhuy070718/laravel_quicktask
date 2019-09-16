@@ -19,4 +19,10 @@ class TaskController extends Controller
         $task->save();
         return back()->with('success', trans('messages.create-succes'));
     }
+
+    public function destroy($id)
+    {
+        Task::find($id)->delete();
+        return back()->with('success', trans('messages.destroy-success'));
+    }
 }
