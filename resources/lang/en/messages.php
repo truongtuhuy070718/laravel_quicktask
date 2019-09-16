@@ -13,5 +13,6 @@ return [
     'edit'=>'Edit',
     'remove'=>'Remove',
     'create-succes'=>'Create Task Successfully',
-    'destroy-success'=>'Delete Task Successfully'
+    'destroy-success'=>'Delete Task Successfully',
+    'destroy-false'=>'Not Found ID to destroy'
 ];
