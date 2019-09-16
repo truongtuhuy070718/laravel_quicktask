@@ -13,3 +13,4 @@
 
 Route::get('/', 'TaskController@index');
 Route::post('/store', 'TaskController@store');
+Route::get('/destroy/{id}', 'TaskController@destroy');
