@@ -11,5 +11,6 @@ return [
     'updated_at'=>'Update_at',
     'action'=>'Action',
     'edit'=>'Edit',
-    'remove'=>'Remove'
+    'remove'=>'Remove',
+    'create-succes'=>'Create Task Successfully'
 ];

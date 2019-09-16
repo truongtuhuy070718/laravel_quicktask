@@ -2,10 +2,11 @@
 @section('title', 'Dashboard')
 @section('content')
     <div class="row">
-        <form action="{{ asset('/') }}" class="form-control" method="post" >
+        <form action="{{ asset('/store') }}" class="form-control" method="post" >
             @csrf
             <input type="text" class="col-sm-8 mr-3 ml-3 taskname" placeholder="@lang('messages.entertask')" name="taskname">
             <button type="submit" class="btn btn-primary col-sm-3" id="addtask">@lang('messages.addtask')</button>
+            @include('layouts.note')
         </form>
     </div>
     <hr>
