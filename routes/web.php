@@ -13,4 +13,3 @@
 
 Route::get('/', 'TaskController@index');
 Route::post('/store', 'TaskController@store');
-

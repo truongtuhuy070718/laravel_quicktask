@@ -17,7 +17,6 @@ class TaskController extends Controller
         $task = new Task;
         $task->name = $request->taskname;
         $task->save();
-        return back()->with('success', 'Create Task Successfully!!');
+        return back()->with('success', trans('messages.create-succes'));
     }
 }
-
