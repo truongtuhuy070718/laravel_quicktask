@@ -11,4 +11,13 @@ class TaskController extends Controller
         $tasks = Task::all();
         return view('index')->with('tasks', $tasks);
     }
+
+    public function store(Request $request)
+    {
+        $task = new Task;
+        $task->name = $request->taskname;
+        $task->save();
+        return back()->with('success', 'Create Task Successfully!!');
+    }
 }
+
